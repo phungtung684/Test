@@ -265,12 +265,6 @@ extension TransactionsViewController: UITableViewDelegate {
 extension TransactionsViewController: UITabBarControllerDelegate {
     
     func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
-        if tabBarController.selectedIndex == 2 {
-            let storyBoard: UIStoryboard? = UIStoryboard(name: "AddTransaction", bundle: nil)
-            if let addTransaction = storyBoard?.instantiateViewControllerWithIdentifier("AddTransactionViewController") as? AddTransactionViewController {
-                let navController = UINavigationController(rootViewController: addTransaction)
-                self.presentViewController(navController, animated:true, completion: nil)
-            }
-        }
+        // Phung Van Tung
     }
 }
